@@ -1,0 +1,31 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:postgresql://localhost:5432/
+    username: juancruzmaurino
+    password: pw
+  data:
+    redis:
+      host: redis
+      post: 6379
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources.add-mappings: false
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+server.error.whitelabel.enabled: false
+
+api:
+  rest:
+    connection-timeout: 100ms
+    read-timeout: 100ms
+    percentage-mock:
+      fail-probability: 0.5
+  cache:
+    ttl: 30m
+  rate-limit:
+    max-rpm: 5
