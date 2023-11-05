@@ -1,12 +1,7 @@
-FROM openjdk:17
+FROM openjdk:17-jdk as build
 
-WORKDIR /app
+COPY . /usr/src/myapp
+WORKDIR /usr/src/myapp
 
-COPY mvnw .
-COPY .mvn/ .mvn
-COPY mvnw pom.xml ./
-RUN ./mvnw  install -DskipTests
-
-COPY src ./src
-
-CMD ["./mvnw", "spring-boot:run"]
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","challenge-0.0.1-SNAPSHOT.jar"]
