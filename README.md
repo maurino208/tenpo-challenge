@@ -29,4 +29,4 @@ $ docker-compose up
 ```
 
 ## Pruebas de los escenarios
-- En la raiz del proyecto hay una collection de postman para probar.
+- At the root of the project there is a collection of postman to test.

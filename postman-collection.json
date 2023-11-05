@@ -1,0 +1,70 @@
+{
+  "collection": {
+    "info": {
+      "_postman_id": "27cf2875-db02-4d26-9546-45ba04e5e04e",
+      "name": "Tenpo Challenge",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2023-11-05T22:07:40.000Z",
+      "uid": "22597812-27cf2875-db02-4d26-9546-45ba04e5e04e"
+    },
+    "item": [
+      {
+        "name": "Calculate",
+        "id": "9816a12e-7430-44d2-86bc-758763c6dce2",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"number_one\": \"1\" ,\r\n    \"number_two\": 13\r\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:8080/api/calculator",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "api",
+              "calculator"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "22597812-9816a12e-7430-44d2-86bc-758763c6dce2"
+      },
+      {
+        "name": "Request",
+        "id": "bfb47f88-0053-41c2-aaf0-97bdfd0be97a",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "localhost:8080/internal/traces",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "internal",
+              "traces"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "22597812-bfb47f88-0053-41c2-aaf0-97bdfd0be97a"
+      }
+    ]
+  }
+}
